@@ -1,0 +1,32 @@
+{
+  "name": "dsh-workspace-deletetool",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "删除 DSH 工作区：移除注册并（可选）连磁盘目录一起删。 / Delete a Workspace registration and its directory.",
+  "license": "MIT",
+  "meta": {
+    "title": "工作区删除 / Workspace Delete",
+    "description": "给外部调用方一个 HTTP 接口：列出所有工作区（含目录大小与文件数），按 id 删除登记，可选连目录一起删。自带路径护栏，拒绝盘符根、用户主目录、DSH 数据目录等。"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "workspace",
+    "delete"
+  ],
+  "exports": {
+    ".": "./host.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "host.js",
+    "cordis.patch.yml",
+    "README.md"
+  ]
+}

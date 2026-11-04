@@ -1,0 +1,14 @@
+node_modules/
+*.log
+*.bak
+*.bak-*
+.selftest/
+.dsh-meow/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
